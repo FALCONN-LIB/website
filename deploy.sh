@@ -1,7 +1,8 @@
 #!/bin/bash
 
-mkdir content/docs
-cd ../falconn
+rm -rf content/docs
+mkdir -p content/docs
+cd ../FALCONN
 make docs
 mv doc/html/* ../website/content/docs
 cd ../website
