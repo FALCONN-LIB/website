@@ -6,4 +6,9 @@ cd ../FALCONN
 make docs
 mv doc/html/* ../website/content/docs
 cd ../website
-rsync -av --delete content/ ilyaraz@ilyaraz.org:/var/www/html/falconn
+mkdir -p content/pdoc
+cd content/pdoc
+pdoc --html falconn
+cd ../..
+pwd
+rsync -av --delete content/ /var/www/html/falconn
