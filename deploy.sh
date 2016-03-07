@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -rf content/docs
+rm -rf content/pdoc
 mkdir -p content/docs
 cd ../FALCONN
 make docs
