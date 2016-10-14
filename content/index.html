@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FALCONN: Similarity Search Over High-Dimensional Data</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400|Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="tracking.js"></script>
     
@@ -25,7 +25,7 @@
 	    <span class="icon-bar"></span>
 	    <span class="icon-bar"></span>
 	  </button>
-	  <a class="navbar-brand" href="http://falconn-lib.org">FALCONN</a>
+	  <a class="navbar-brand" href="https://falconn-lib.org">FALCONN</a>
 	</div>
 	<div id="navbar" class="collapse navbar-collapse">
 	  <ul class="nav navbar-nav">
@@ -48,24 +48,8 @@
 	code and <a href="https://github.com/falconn-lib/falconn/wiki">documentation</a> (released under the <a href="https://opensource.org/licenses/MIT">MIT license</a>) or just <a href="https://github.com/FALCONN-LIB/FALCONN/releases/tag/v1.2">download</a> version 1.2.
     To install the <a href="https://pypi.python.org/pypi">Pypi</a> <a href="https://pypi.python.org/pypi/FALCONN">package</a>, simply type <code>pip install falconn</code> in a terminal.</b></p>
     <h3>Benchmarks</h3>
-    <p>
-      Below are the results of FALCONN being compared with other open source similarity search algorithms.
-      The dataset, which consists of vector representations for words produced by <a href="http://nlp.stanford.edu/projects/glove/">GloVe</a>,
-      has 1.2M points in 100 dimensions.
-      The results for other algorithms are taken from
-      <a href="https://github.com/erikbern/ann-benchmarks">ann-benchmarks</a> created by <a href="http://erikbern.com/">Erik Bernhardsson</a>. Note that FALCONN is especially good in the regime of high accuracy (0.8 or more).
-    </p>
-    <p>
-      The plot axes are: accuracy retrieving 10 closest data points vs. the number of queries per second.
-      The picture is clickable.
-    </p>
-    <div class="row">
-      <div class="col-lg-6">
-	<a href="plot.png">
-	  <img src="plot.png" width="100%"/>
-	</a>
-    </div>
-    </div>
+    <p>On data sets with about 1 million points in around 100 dimensions, FALCONN typically requires a few milliseconds per query (running on a reasonably modern desktop CPU).</p>
+    <p>For more detailed results, see <a href="https://github.com/erikbern/ann-benchmarks">ann-benchmarks</a> of <a href="https://erikbern.com/">Erik Bernhardsson</a>. Let us point out that FALCONN is especially competitive, when the RAM budget is quite restrictive, which is not the regime the above benchmarks use.</p>
     <h3>Publications</h3>
     <p>The underlying algorithms are described and analyzed in the following paper:
       <ul><li><b>&ldquo;Practical and Optimal LSH for Angular Distance&rdquo;</b> by A.&nbsp;Andoni, P.&nbsp;Indyk, T.&nbsp;Laarhoven, I.&nbsp;Razenshteyn and L.&nbsp;Schmidt, NIPS 2015, full version available at <a href="http://arxiv.org/abs/1509.02897">arXiv:1509.02897</a>.</li></ul></p>
