@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 rm -rf dist
 cd bootstrap-3.3.6
 grunt dist
