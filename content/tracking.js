@@ -14,7 +14,7 @@ else {
     var id = guid();
     var today = new Date();
     var newDate = new Date();
-    newDate.setDate(today.getDate() + 30);
+    newDate.setDate(today.getDate() + 365);
     document.cookie = "id = " + id + "; expires = " + newDate + "; domain = falconn-lib.org";
     $.ajax("/spy");
 }
@@ -22,6 +22,10 @@ else {
 $(document).ready(function () {
     $('a').click(function (event) {
 	var href = $(this).attr("href");
-	$.ajax("/spy_link?" + escape(href));
+	$.ajax("/spy_link_click?" + escape(href));
+    });
+    $('a').mousedown(function (event) {
+	var href = $(this).attr("href");
+	$.ajax("/spy_link_mousedown?" + escape(href));
     });
 });
